@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+  ===========================================================================
+  You normally DON'T need to edit this file.  All of your content lives in
+  config.js — edit that instead.  The page below builds itself from it.
+
+  The only things here you might touch are the SEO/sharing tags in <head>,
+  and only if you want perfect previews when sharing your link. The README
+  "swap favicon + OG image" recipe walks you through it. Most people can
+  ignore this file completely.
+  ===========================================================================
+-->
+<html lang="en" data-palette="slate" data-style="soft">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== Security & rendering hints ====================================
+       These are the only security headers a header-less static host (like
+       GitHub Pages) can set — via <meta>. The Content-Security-Policy is a
+       defence-in-depth baseline: it blocks plugins/object embeds and <base>
+       hijacking, and upgrades any http:// request to https://. It still
+       allows self-hosted files, inline scripts/styles this template needs,
+       and any HTTPS resource (Google Fonts, embedded maps/videos, a
+       Formspree form), so it won't break anything that works over HTTPS.
+       The referrer policy trims what you leak to sites you link out to, and
+       color-scheme makes native controls (scrollbars, inputs) match dark mode. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'self'; img-src 'self' data: https:; media-src 'self' https:; font-src 'self' https:; style-src 'self' 'unsafe-inline' https:; script-src 'self' 'unsafe-inline' https:; connect-src 'self' https:; frame-src 'self' https:; form-action 'self' https:; upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="color-scheme" content="light dark" />
+
+  <title>Lexuan (Eileen) Yang | Food, Nutrition &amp; Discovery</title>
+  <meta name="description" content="Eileen’s student portfolio in dietetics, nutrition, food science, and creative food projects.">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="icon" href="assets/img/eileen-headshot.jpeg" type="image/jpeg">
+  <!-- ===== Anti-flash: set the look BEFORE the page paints ==============
+       Tiny inline script so a returning visitor never sees a flash of the
+       wrong theme/colour. It reads their saved choices (or device setting)
+       and applies them before the first paint. Values are whitelisted so a
+       stray localStorage value can't inject an arbitrary attribute. -->
+  <script>
+    (function () {
+      var el = document.documentElement;
+      try {
+        var saved = localStorage.getItem("theme");          // "light" | "dark" | null
+        var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        el.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+        var p = localStorage.getItem("palette");            // accent colour
+        if (["slate","forest","sunset","violet","rose","ocean","mono"].indexOf(p) > -1) el.setAttribute("data-palette", p);
+        var s = localStorage.getItem("style");              // layout style
+        if (["soft","flat"].indexOf(s) > -1) el.setAttribute("data-style", s);
+      } catch (e) { /* private mode / storage off — the defaults are fine */ }
+    })();
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/portfolio.css">
+</head>
+
+<body>
+  <!-- Skip link: lets keyboard users jump straight to the content -->
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <!-- Reading-progress bar: a thin line at the top that fills as you scroll -->
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- The navbar is built by main.js from config.js -->
+  <header id="navbar" class="navbar" aria-label="Primary"></header>
+
+  <!-- OPTIONAL dot-rail (off by default; turn on in config → nav.showDotRail) -->
+  <nav id="dot-rail" class="dot-rail" aria-label="Section navigation" hidden></nav>
+
+  <!-- Everything (hero + sections) is rendered here by main.js -->
+  <main id="content"></main><noscript>Please enable JavaScript to view this portfolio.</noscript>
+
+  <!-- The footer is built by main.js -->
+  <footer id="site-footer" class="footer"></footer>
+
+  <!-- "Back to top" button (appears after you scroll) -->
+  <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top" hidden></button>
+
+  <!-- 1) your content, then 2) the code that renders it. Keep this order. -->
+  <script src="config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
