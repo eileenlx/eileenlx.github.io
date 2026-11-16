@@ -206,7 +206,7 @@
      RENDER: navbar
      =================================================================== */
   function renderNav() {
-    const aboutIds = ["about", "goals", "honors", "certifications", "resume", "memberships", "connect"];
+    const aboutIds = ["about", "goals", "honors", "certifications", "resume", "memberships", "professional", "connect"];
     function link(id) {
       const item = SITE.sections.find(function(x){ return x.id === id; });
       return '<a class="navbar__link" href="#' + id + '">' + esc(item.nav) + '</a>';
@@ -216,7 +216,7 @@
       '<li><a class="navbar__link" href="#top">Home</a></li>' +
       '<li class="nav-group"><button class="navbar__link dropdown-toggle" type="button" aria-expanded="false" aria-controls="about-menu">About <span aria-hidden="true">⌄</span></button><ul class="dropdown-menu" id="about-menu" hidden>' +
       aboutIds.map(function(id){return '<li>' + link(id) + '</li>';}).join('') + '</ul></li>' +
-      '<li>' + link('experience') + '</li><li>' + link('projects') + '</li>' +
+      '<li>' + link('experience') + '</li><li>' + link('projects') + '</li><li>' + link('creations') + '</li>' +
       '</ul></nav>' +
       '<button class="icon-btn nav-toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">' + icon('menu') + '</button></div>';
   }
@@ -414,7 +414,7 @@
   function renderSection(reg) {
     const data = SITE[reg.id];
     if (!data) return "";
-    const renderer = RENDERERS[reg.id];
+    const renderer = RENDERERS[reg.id === "creations" ? "projects" : reg.id];
     // Known section? use its renderer. Otherwise, if the section provides
     // raw "html" (e.g. an embedded map/video/tool), drop it in as-is.
     let body = "";
