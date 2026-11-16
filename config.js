@@ -89,6 +89,11 @@ const SITE = {
       "show": true
     },
     {
+      "id": "creations",
+      "nav": "My Creations",
+      "show": true
+    },
+    {
       "id": "experience",
       "nav": "Experiences",
       "show": true
@@ -106,6 +111,11 @@ const SITE = {
     {
       "id": "memberships",
       "nav": "Memberships",
+      "show": true
+    },
+    {
+      "id": "professional",
+      "nav": "Professional Organization",
       "show": true
     },
     {
@@ -142,7 +152,7 @@ const SITE = {
     ]
   },
   "projects": {
-    "intro": "Presentations and outreach materials connecting scientific learning with practical communication.",
+    "intro": "Selected coursework in nutrition, physiology, and community program planning.",
     "filters": false,
     "items": [
       {
@@ -246,31 +256,6 @@ const SITE = {
       },
       {
         "featured": false,
-        "title": "Cannabis: High or Harm",
-        "description": "An interactive nutrition education project presented with Emma Szponder and Lea Vouris. Materials include craving-swap activities, true/false questions, and discussion of cannabis, appetite, and informed health decisions.",
-        "course": "McKinley Health Center · outreach project",
-        "year": "2026",
-        "image": "assets/img/cannabis.jpg",
-        "tags": [
-          "McKinley Health Center · outreach project",
-          "Group project"
-        ],
-        "links": [
-          {
-            "type": "pdf",
-            "label": "View presentation PDF",
-            "url": "assets/documents/cannabis.pdf"
-          }
-        ],
-        "photos": [
-          {
-            "src": "assets/img/cannabis-outreach.png",
-            "alt": "Eileen at the Cannabis: High or Harm outreach display"
-          }
-        ]
-      },
-      {
-        "featured": false,
         "title": "Why Protein Matters",
         "course": "FSHN 329",
         "year": "2026",
@@ -287,43 +272,6 @@ const SITE = {
             "url": "assets/documents/why-protein-matters.pdf"
           }
         ]
-      },
-      {
-        "title": "IAND Fall Workshop Flyer",
-        "course": "Illinois Academy of Nutrition and Dietetics",
-        "year": "2026",
-        "description": "A promotional flyer for “Filling the Need: Advancing Food Security in Oncology Care,” presenting workshop objectives and event information in a clear visual format.",
-        "image": "assets/img/iand-fall-workshop.jpg",
-        "tags": [
-          "IAND",
-          "Visual communication"
-        ],
-        "links": [
-          {
-            "type": "pdf",
-            "label": "View flyer PDF",
-            "url": "assets/documents/iand-fall-workshop.pdf"
-          }
-        ]
-      },
-      {
-        "title": "The Best Milk For You",
-        "course": "Nutrition communication",
-        "year": "2026",
-        "description": "A short nutrition video designed for social media, presenting food information in an approachable visual format.",
-        "image": "assets/img/best-milk.jpg",
-        "tags": [
-          "Social media",
-          "Video"
-        ],
-        "links": [
-          {
-            "type": "video",
-            "label": "Watch video",
-            "url": "assets/video/best-milk.mp4"
-          }
-        ],
-        "video": "assets/video/best-milk.mp4"
       }
     ]
   },
@@ -373,8 +321,7 @@ const SITE = {
         "bullets": [
           "Lead digital communications and develop evidence-based nutrition content for professional and public audiences.",
           "Coordinate outreach promoting IAND programs, events, and nutrition resources."
-        ],
-        "detailsHtml": "<div class=\"organization-detail\"><h4>Professional Organization Participation</h4><p>IAND connects nutrition and dietetics professionals across Illinois through education, professional development, advocacy, and collaboration. In my communications role, I help share nutrition information, events, and opportunities with professional and public audiences.</p><p><a href=\"#projects\">View my communications projects ↗</a></p></div>"
+        ]
       },
       {
         "title": "Nutrition Wellness Peer",
@@ -399,7 +346,7 @@ const SITE = {
       },
       {
         "title": "Research manuscript co-author",
-        "org": "Metabolic exposures and the telomere–mitochondria axis in human aging · Under review",
+        "org": "Metabolic exposures and the telomere–mitochondria axis in human aging · 2026 · Under review",
         "dates": "",
         "logo": "",
         "bullets": [
@@ -436,7 +383,7 @@ const SITE = {
   },
   "honors": {
     "intro": "Academic recognition at the University of Illinois Urbana-Champaign.",
-    "html": "<div class=\"honors-layout\"><article class=\"credential-card\"><h3>James Scholar Honors Program</h3><p>University of Illinois Urbana-Champaign</p></article><article class=\"credential-card\"><h3>Dean’s List</h3><p>College of Agricultural, Consumer and Environmental Sciences · University of Illinois Urbana-Champaign</p><div class=\"honors-evidence\"><figure><a href=\"assets/documents/deans-list-fall-2025.pdf\" target=\"_blank\" rel=\"noopener\"><img src=\"assets/img/deans-list-fall-2025.jpg\" alt=\"Dean’s List certificate for Fall 2025\" loading=\"lazy\"></a><figcaption>Fall 2025</figcaption></figure><figure><a href=\"assets/documents/deans-list-spring-2026.pdf\" target=\"_blank\" rel=\"noopener\"><img src=\"assets/img/deans-list-spring-2026.jpg\" alt=\"Dean’s List certificate for Spring 2026\" loading=\"lazy\"></a><figcaption>Spring 2026</figcaption></figure></div></article></div>"
+    "html": "<div class=\"honors-layout\"><article class=\"credential-card\"><h3>James Scholar Honors Program</h3><p>Spring &amp; Fall 2026</p><p>University of Illinois Urbana-Champaign</p></article><article class=\"credential-card\"><h3>Dean’s List</h3><p>College of Agricultural, Consumer and Environmental Sciences · University of Illinois Urbana-Champaign</p><div class=\"honors-evidence\"><figure><a href=\"assets/documents/deans-list-fall-2025.pdf\" target=\"_blank\" rel=\"noopener\"><img src=\"assets/img/deans-list-fall-2025.jpg\" alt=\"Dean’s List certificate for Fall 2025\" loading=\"lazy\"></a><figcaption>Fall 2025</figcaption></figure><figure><a href=\"assets/documents/deans-list-spring-2026.pdf\" target=\"_blank\" rel=\"noopener\"><img src=\"assets/img/deans-list-spring-2026.jpg\" alt=\"Dean’s List certificate for Spring 2026\" loading=\"lazy\"></a><figcaption>Spring 2026</figcaption></figure></div></article></div>"
   },
   "memberships": {
     "intro": "Professional and campus engagement.",
@@ -445,6 +392,78 @@ const SITE = {
   "connect": {
     "intro": "Let’s talk about food & health.",
     "html": "<img src=\"assets/img/contact-chicago.jpg\" alt=\"Eileen at Cloud Gate in Chicago\" loading=\"lazy\"><h3>For research, nutrition outreach, and collaboration inquiries.</h3><p>Lexuan (Eileen) Yang · Champaign, Illinois</p><div class=\"resume-actions\"><a class=\"btn btn--primary\" href=\"mailto:lexuan2@illinois.edu\">Email me ↗</a><a class=\"btn btn--ghost\" href=\"https://www.linkedin.com/in/lexuanyang/\" target=\"_blank\" rel=\"noopener\">LinkedIn ↗</a></div>"
+  },
+  "professional": {
+    "intro": "Illinois Academy of Nutrition and Dietetics (IAND)",
+    "html": "<article class=\"credential-card\"><h3>My Participation</h3><p><strong>PR &amp; Social Media Committee Chair · April 2026–Present</strong></p><p>I lead digital communications and develop evidence-based nutrition content for professional and public audiences. I also coordinate outreach promoting IAND programs, events, and nutrition resources.</p><h3 style=\"margin-top:26px\">The Organization’s Significant Role</h3><p>IAND connects nutrition and dietetics professionals across Illinois through education, professional development, advocacy, and collaboration. Its communications and events help share nutrition knowledge, support the profession, and connect practitioners with their communities. Through my communications role, I help make nutrition information and professional opportunities easier to access.</p><p style=\"margin-top:22px\"><a href=\"#creations\">View my IAND communications work ↗</a></p></article>"
+  },
+  "creations": {
+    "intro": "Original outreach materials, visual communication, and nutrition media.",
+    "filters": false,
+    "items": [
+      {
+        "featured": false,
+        "title": "Cannabis: High or Harm",
+        "description": "An interactive nutrition education project presented with Emma Szponder and Lea Vouris. Materials include craving-swap activities, true/false questions, and discussion of cannabis, appetite, and informed health decisions.",
+        "course": "McKinley Health Center · outreach project",
+        "year": "2026",
+        "image": "assets/img/cannabis.jpg",
+        "tags": [
+          "McKinley Health Center · outreach project",
+          "Group project"
+        ],
+        "links": [
+          {
+            "type": "pdf",
+            "label": "View presentation PDF",
+            "url": "assets/documents/cannabis.pdf"
+          }
+        ],
+        "photos": [
+          {
+            "src": "assets/img/cannabis-outreach.png",
+            "alt": "Eileen at the Cannabis: High or Harm outreach display"
+          }
+        ]
+      },
+      {
+        "title": "IAND Fall Workshop Flyer",
+        "course": "Illinois Academy of Nutrition and Dietetics",
+        "year": "2026",
+        "description": "A promotional flyer for “Filling the Need: Advancing Food Security in Oncology Care,” presenting workshop objectives and event information in a clear visual format.",
+        "image": "assets/img/iand-fall-workshop.jpg",
+        "tags": [
+          "IAND",
+          "Visual communication"
+        ],
+        "links": [
+          {
+            "type": "pdf",
+            "label": "View flyer PDF",
+            "url": "assets/documents/iand-fall-workshop.pdf"
+          }
+        ]
+      },
+      {
+        "title": "The Best Milk For You",
+        "course": "Nutrition communication",
+        "year": "2026",
+        "description": "A short nutrition video designed for social media, presenting food information in an approachable visual format.",
+        "image": "assets/img/best-milk.jpg",
+        "tags": [
+          "Social media",
+          "Video"
+        ],
+        "links": [
+          {
+            "type": "video",
+            "label": "Watch video",
+            "url": "assets/video/best-milk.mp4"
+          }
+        ],
+        "video": "assets/video/best-milk.mp4"
+      }
+    ]
   }
 };
 window.SITE = SITE;
